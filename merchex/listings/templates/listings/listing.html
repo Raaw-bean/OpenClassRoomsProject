@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchex</title>
+  </head>
+  <body>
+    <h1>Merchandises</h1>
+    <p>There are {{merches|length}} available merches</p>
+    <ul>
+      {% for merch in merches %}
+      <li>{{merch.title}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
